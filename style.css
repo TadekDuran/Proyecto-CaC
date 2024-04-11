@@ -1,0 +1,74 @@
+*    {
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: #E0E0E0;
+    text-decoration: none;
+}
+/*  Index   */
+header  {
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+header .centrado {
+    flex-grow: 1;
+    text-align: center;
+}
+header input[type="text"]  {
+    border: none;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+    height: 40px;
+    width: 400px;
+}
+header button   {
+    height: 40px;
+    border: none;
+}
+header button:hover {
+    background-color: #E0E0E0;
+    color: black;
+    cursor: pointer;
+}
+header button:hover > a {
+    background-color: #E0E0E0;
+    color: black;
+    cursor: pointer;
+}
+header #login   {
+    margin-left: auto;
+}
+
+.marcas-container   {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.marcas-container button   {
+    flex-grow: 1;
+    padding: 0 30px;
+    height: inherit;
+    border: none
+}
+.marcas-container button:hover      {
+    background-color: #C7C7C7;
+    color: black;
+    cursor: pointer;
+}
+.marcas-container button:hover > a  {
+    background-color: #C7C7C7;
+    color: black;
+    cursor: pointer;
+}
+/*  Login */
+.login-block    {
+    text-align: center;
+    border: black;
+}
+p   {
+    text-decoration: none;
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500
+    
+    
+}
+body {
+    background-color: rgb(255, 255, 246);
+}
+
+header {
+    background-color: #FC3131;
+    
+}
+
+.nav-button {
+    background-color: #FC3131;
+    font-size: 1em;
+    
+}
+
+footer {
+    background-color: #FC3131;
+    font-size: 0.6em;
+    
+}
+
+#populares {
+    width: 250px;
+    height: 400px;
+    border: 3px;
+    border-color: #FC3131;
+}

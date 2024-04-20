@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto CaC</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" href="/css/style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/83d0bbc62a.js" crossorigin="anonymous"></script>
+    <title> BurgerQueen</title>
+
 </head>
 <body>
     <header>
-        <button>
-            <a>Tecno Tienda</a>
-        </button>
-        <div class="centrado">
-            <form>
-                <input type="text" name="" id="search" placeholder="Buscar en la tienda...">
-                <button tyoe="submit">Buscar</button>
-            </form>
-        </div>
-        <button id="login">
-            <a href="./auth/login.html">Iniciar Sesión</a>
-        </button>
-        <button id="registrarse">
-            <a href="">Registrarse</a>
-        </button>
+        <nav>
+            <a href="index.html" class="nav-button">BQ</a>
+            <a href="menu.html" class="nav-button">MENU</a>
+            <a href="sucursales.html" class="nav-button">SUCURSALES</a>
+            <a href="contacto.html" class="nav-button">Trabajá con nosotros</a>
+        </nav>
     </header>
+
     <main>
-        <div class="marcas-container">
-            <button>
-                <a href="">Samsung</a>
-            </button>
-            <button>
-                <a href="">Xiaomi</a>
-            </button>
-            <button>
-                <a href="">Motorola</a>
-            </button>
-            <button>
-                <a href="">Iphone</a>
-            </button>
-            <button>
-                <a href="">Consolas</a>
-            </button>
+        <div>
+            <h1>Burger Queen</h1>
+            <h3>Hamburguesas de autor</h3> 
         </div>
+        
+        <section>
+            <h2>Los más vendidos</h2>
+            <div>
+               <!-- Agrego 4 para que en tamaño tablet se vean 2 y 2--> 
+                <img src="/img/placeholder_burguer.jpg" alt="Más vendidos 1" id="populares">
+                <img src="/img/placeholder_burguer.jpg" alt="Más vendidos 2" id="populares">
+                <img src="/img/placeholder_burguer.jpg" alt="Más vendidos 3" id="populares">
+                <img src="/img/placeholder_burguer.jpg" alt="Más vendidos 4" id="populares">
+            </div>
+            <a href="menu.html">Más</a>
+        </section>
+            
     </main>
+
+    <footer>
+        <div class="contenedor">
+            <a href="https://www.facebook.com/BurgerQueen"><i  class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/BurgerQueen"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com/BurgerQueen"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <p>©2000-2024 BurgerQueen</p>
+    </footer>
+    
 </body>
 </html>

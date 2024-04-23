@@ -3,8 +3,6 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500
-   
-   
 }
 body {
     background: red;
@@ -64,6 +62,51 @@ nav a:hover{
     font-size: 1em;
     
 }
+
+/* MENU.HTML CARD */
+
+h3  {
+    margin: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+    gap: 50px;
+}
+
+article {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+article:hover   {
+    transform: scale(1.1);
+}
+
+.precio {
+    font-weight: 800;
+}
+
+#promo  {
+    display: flex;
+    margin: 30px 50px;
+    gap: 50px;
+}
+
+#populares {
+    width: 250px;
+    height: 400px;
+    border: 3px;
+    border-color: #FC3131;
+}
+
+
+/* FIN MENU.HTML CARD */
 
 /*FLIP CARD*/
 

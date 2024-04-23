@@ -3,17 +3,60 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500
-    
-    
+   
+   
 }
 body {
-    background-color: rgb(255, 255, 246);
+    background: red;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*header*/
+a{
+    text-decoration: none;
+    color: black;
 }
 
+
 header {
-    background-color: #FC3131;
-    
+    display: flex;
+    height: 130px;
+    background: url(/Proyecto-CaC/img/banner.png)no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;    
 }
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-left: 100px;
+}
+
+
+.logo img{
+    height: 150px;
+    margin-right: 30px;
+    margin-left: 70px;
+}
+
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+
+
+nav a:hover{
+    color: red;
+}
+/*fin header*/
 
 .nav-button {
     background-color: #FC3131;
@@ -21,15 +64,30 @@ header {
     
 }
 
-footer {
-    background-color: #FC3131;
-    font-size: 0.6em;
-    
+/*inicia footer*/
+footer{
+    padding: 1em;
+    text-align: center;
+    margin-top: auto;
+    background-color: black;
+    color: white;
 }
 
-#populares {
-    width: 250px;
-    height: 400px;
-    border: 3px;
-    border-color: #FC3131;
+
+i{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 2px 2px white;
 }
+
+
+.copy{
+    background: grey;
+    text-align: center;
+    color: black;
+}
+/*fin footer*/

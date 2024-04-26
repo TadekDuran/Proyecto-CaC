@@ -26,7 +26,6 @@ header {
     padding: 10px;    
 }
 
-
 .logo{
     display: flex;
     align-items: center;
@@ -34,16 +33,28 @@ header {
     margin-left: 100px;
 }
 
-
 .logo img{
     height: 150px;
-    margin-right: 30px;
-    margin-left: 70px;
+    position: absolute;
+    left: 5%;
+}
+#cerrar-menu {
+    display: none;
+    box-shadow: none;
+}
+#abrir-menu {
+    display: none;
+    box-shadow: none;
 }
 
+.menu-lista {
+    list-style-type: none;
+    display: flex;
+}
 
 nav a{
-    font-weight: 600;
+    font-size: 2vh;
+    font-weight: 800;
     padding-right: 10px;
 }
 
@@ -51,10 +62,48 @@ h2{
     
 }
 
-
-nav a:hover{
+nav ul li a:hover{
     color: red;
 }
+
+/* Header responsive */
+@media screen and (max-width: 750px){
+    #abrir-menu, #cerrar-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar {
+        opacity: 0;
+        visibility: hidden;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color:#FC3131;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .navbar.visible    {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cerrar-menu    {
+        display: block;
+        box-shadow: none;
+        color: black;
+        padding: 0px;
+    }
+    .menu-lista {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        padding-right: 0.9rem;
+    }
+}
+
 /*fin header*/
 
 .nav-button {

@@ -157,6 +157,27 @@ article:hover   {
 
 /* FIN MENU.HTML CARD */
 
+/*ÍCONOS FLOTANTE*/
+.icono{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;  
+    z-index: 1000;  
+}
+.wsp{
+    left: 30px;
+}
+.up{
+    right: 30px;
+}
+
+.icono:hover{
+    width: 60px;
+    height: 60px;
+}
+/*FIN ÍCONOS FLOTANTES*/
 /*FLIP CARD*/
 
 .cards-grid {

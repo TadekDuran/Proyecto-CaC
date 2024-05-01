@@ -75,7 +75,7 @@ nav ul li a:hover{
     .navbar {
         opacity: 0;
         visibility: hidden;
-        width: 40%;
+        width: 43%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -85,6 +85,7 @@ nav ul li a:hover{
         bottom: 0;
         background-color:#FC3131;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 1000;
     }
     .navbar.visible    {
         opacity: 1;

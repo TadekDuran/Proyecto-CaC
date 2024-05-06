@@ -30,12 +30,11 @@ header {
     display: flex;
     align-items: center;
     color: black;
-    margin-left: 100px;
+    
 }
 
 .logo img{
     height: 150px;
-    position: absolute;
     left: 5%;
 }
 #cerrar-menu {

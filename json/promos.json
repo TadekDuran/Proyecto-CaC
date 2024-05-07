@@ -1,0 +1,28 @@
+{
+    "promos":   [
+        {
+            "id": 1,
+            "nombre": "God Bless the Queen",
+            "descripcion": "Burger Queen + Queendom + Queen's Throne + Queen's Crown",
+            "precio": 6000,
+            "stock": true,
+            "imagen": "/img/burga ejemplo.avif"
+        },
+        {
+            "id": 2,
+            "nombre": "Queen's Crowning",
+            "descripcion": "Queen's Throne + Queen's Crown",
+            "precio": 3500,
+            "stock": true,
+            "imagen": "/img/burga ejemplo.avif"
+        },
+        {
+            "id": 3,
+            "nombre": "Queen's Empire",
+            "descripcion": "Burger Queen + Queemdom + Queen Big + Queen's Throne + Queen's Crown",
+            "precio": 7000,
+            "stock": true,
+            "imagen": "/img/burga ejemplo.avif"
+        }
+    ]
+}

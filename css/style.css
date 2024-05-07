@@ -133,23 +133,33 @@ article {
     transition: transform 0.3s ease;
 }
 
-article:hover   {
-    transform: scale(1.1);
+#imagen-producto {
+    max-width: 100%;
+    border: 3px;
+    border-color: #FC3131;
 }
 
 .precio {
     font-weight: 800;
 }
 
-#promo  {
+article:hover   {
+    transform: scale(1.1);
+}
+
+.promos  {
     display: flex;
     margin: 30px 50px;
     gap: 50px;
 }
 
-#populares {
-    width: 250px;
-    height: 400px;
+.tarjeta-promo  {
+    width: 70%;
+    max-width: 250px;
+}
+
+#imagen-promo   {
+    max-width: 100%;
     border: 3px;
     border-color: #FC3131;
 }

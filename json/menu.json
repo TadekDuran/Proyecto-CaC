@@ -1,0 +1,39 @@
+{
+    "productos":    [
+        {
+            "id": 1,
+            "nombre": "Burger Queen",
+            "precio": 1000,
+            "stock": true,
+            "imagen": "/img/burga ejemplo.avif"
+        },
+        {
+            "id": 2,
+            "nombre": "Queendom",
+            "precio": 1500,
+            "stock": true,
+            "imagen": "/img/burga ejemplo.avif"
+        },
+        {
+            "id": 3,
+            "nombre": "Queen Big",
+            "precio": 1250,
+            "stock": true,
+            "imagen": "/img/burga ejemplo.avif"
+        },
+        {
+            "id": 4,
+            "nombre": "Queen's Throne",
+            "precio": 2000,
+            "stock": true,
+            "imagen": "/img/burga ejemplo.avif"
+        },
+        {
+            "id": 5,
+            "nombre": "Queen's Crown",
+            "precio": 1750,
+            "stock": true,
+            "imagen": "/img/burga ejemplo.avif"
+        }
+    ]
+}

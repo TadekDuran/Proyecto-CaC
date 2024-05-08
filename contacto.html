@@ -40,7 +40,8 @@
                     </div>
 
                     <div class="form">
-                    <form action="https://formspree.io/f/mwkgaboj" method="POST" target="_self" enctype="multipart/form-data" id="form">
+                    <form name="form" action="https://formspree.io/f/mwkgaboj" method="POST" target="_self" enctype="multipart/form-data" id="form">
+                    <!--Solucionar conflicto entre formspree y Netlify=> validar.js ln 39-->
     
                         <fieldset>
                             <legend>Datos Personales</legend>
@@ -53,7 +54,8 @@
     
                             <label for="provincia">Provincia</label> <br>
                             <select id="provincia" name="provincia">
-                                    <option value="Buenos Aires " selected>Buenos Aires</option>
+                                    <option value="" selected>Seleccioná tu lugar de residencia</option>
+                                    <option value="Buenos Aires " >Buenos Aires</option>
                                     <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
                                     <option value="Catamarca">Catamarca</option>
                                     <option value="Chaco">Chaco</option>
@@ -115,11 +117,11 @@
                          
                         <fieldset>
                             <legend>Contanos por qué querés trabajar con nosotros</legend>
-                          <textarea name="text-area" id="text-area" cols="30" rows="10" maxlength="1500"></textarea>  
+                          <textarea name="text_area" id="text-area" cols="30" rows="10" maxlength="1500"></textarea>  
                         </fieldset>
                         
                     
-                        <button type="submit">Enviar</button>
+                        <button type="button" onclick="validar()">Enviar</button>
                     </form>   
     
                     </div>
@@ -138,5 +140,6 @@
     </footer>
     <script src="/js/main.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/validar.js"></script>
 </body>
 </html>

@@ -400,7 +400,7 @@ legend{
     padding: 1%;    
 }
 
-form select, form textarea, form input:not(.excluido, #cv){
+form select, form input:not(.excluido, #cv){
     width: 100%;
     box-sizing: border-box; 
     border: 1px solid white;
@@ -408,11 +408,14 @@ form select, form textarea, form input:not(.excluido, #cv){
 }   
 
 form textarea {
+    width: 100%;
+    box-sizing: border-box;
     border: 1px solid rgb(197, 40, 40);
-}
-
-#text-area {
+    border-radius: 15px;
     padding: 5px;
+    background-image: url("../img/corona_roja_op.png");
+    background-size: 30px;
+    background-repeat: repeat;
 }
 /*FIN RRHH*/
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 * {
     margin: 0%;
     font-family: "Nunito", sans-serif;
@@ -111,7 +112,68 @@ nav ul li a:hover{
     font-size: 1em;
     
 }
-
+/*INDEX.HTML*/
+.banner{
+    background-image: url(/img/fondohamburguesa.jpg.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+}
+.content-banner{
+    margin-top: 0 auto;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+}
+.content-banner h1{
+    color: red;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    margin: 8%;
+    height: 3vh;
+    justify-content: left;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.content-banner h3{
+    color:gray;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    margin: 8%;
+    justify-content: left;
+    font-weight: 400;
+    font-style: normal;
+}
+.encabezado h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color:white;
+    font-size: 1.5rem;
+    display: flex;
+    font-size: 1,5rem;
+    justify-content: center;
+    align-content: center;
+    font-style: normal;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gif{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
 /* MENU.HTML CARD */
 
 h3  {

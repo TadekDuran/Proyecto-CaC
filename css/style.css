@@ -213,6 +213,7 @@ article:hover   {
     display: flex;
     margin: 30px 50px;
     gap: 50px;
+    justify-content: center;
 }
 
 .tarjeta-promo  {

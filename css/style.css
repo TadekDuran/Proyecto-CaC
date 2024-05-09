@@ -351,12 +351,12 @@ article:hover   {
     border: 3px solid rgb(197, 40, 40);
     border-radius: 28px;
     padding: 5% 2%;   
-    display: flex;
     
 }
 
 .nosotros{
     background-color: rgb(197, 40, 40);
+    display: flex;
     align-items: center;  
 }
 
@@ -376,7 +376,8 @@ article:hover   {
 }
 
 .form {
-    background-color: rgb(255, 255, 255);  
+    background-color: rgb(255, 255, 255); 
+    
 }
 
 

@@ -1,0 +1,37 @@
+{
+    "sucursales": [
+        {
+            "ubicacion": "Microcentro",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.963147868563!2d-58.381524288556605!3d-34.605093372841004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacee0003a2d%3A0xb01ad2fdef07b577!2sAv.%20Corrientes%2C%20C1043AAJ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714161347052!5m2!1ses!2sar"
+        },
+        {
+            "ubicacion": "Palermo",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9218869162246!2d-58.430656450522086!3d-34.580843003461304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb584d78f0019%3A0xa381b5e61c7d2c17!2sFray%20Justo%20Sta.%20Mar%C3%ADa%20de%20Oro%202301-2399%2C%20C1425FOG%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714161282015!5m2!1ses!2sar"
+        },
+        {
+            "ubicacion": "Belgrano",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8892.940219313778!2d-58.46260061282455!3d-34.56168273027992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714164436561!5m2!1ses!2sar"
+        },
+        {
+            "ubicacion": "La Plata",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.688179726633!2d-57.95296905966448!3d-34.91427397295759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e630aa5e1781%3A0x57b2d3278fd3b5a3!2sAv.%207%20%26%20C.%2049%2C%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1713761597671!5m2!1ses!2sar"
+        },
+        {
+            "ubicacion": "City Bell",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.9396730441968!2d-58.04826907568855!3d-34.87191179522386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2de7c07e6fdc9%3A0x2d5b5f2abeaf9f30!2sC.%20Cantilo%20719%2C%20B1896%20City%20Bell%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714160802694!5m2!1ses!2sar"
+        },
+        {
+            "ubicacion": "Brandsen",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6522.989646876216!2d-58.23690649393159!3d-35.16921763400172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2b62b6b035fd9%3A0xace318c4995fd0e!2sCoronel%20Brandsen%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714161459718!5m2!1ses!2sar"
+        },
+        {
+            "ubicacion": "Villa Gesell",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4242.8793385698345!2d-56.975839773564395!3d-37.26269797407412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b605cb3ab1385%3A0x87b6ac1109f19c75!2sVilla%20Gesell%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714164611298!5m2!1ses!2sar"
+        },
+        {
+            "ubicacion":"San Rafael",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22818.27453584315!2d-68.35197866559851!3d-34.619162277732464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907fdb13d06a7%3A0xe0fb2796d473309d!2sSan%20Rafael%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1714164679037!5m2!1ses!2sar"
+        }
+       
+    ]
+}

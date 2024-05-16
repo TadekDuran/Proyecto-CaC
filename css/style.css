@@ -6,7 +6,7 @@
     font-weight: 500
 }
 body {
-    background: red;
+    background: #FF3131;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -58,12 +58,8 @@ nav a{
     padding-right: 10px;
 }
 
-h2{
-    
-}
-
 nav ul li a:hover{
-    color: red;
+    color: white;
 }
 
 /* Header responsive */
@@ -125,7 +121,7 @@ nav ul li a:hover{
     padding: 2rem 0;
 }
 .content-banner h1{
-    color: red;
+    color: #FF3131;
     font-size: 5rem;
     font-weight: 700;
     line-height: 1.2;
@@ -244,6 +240,8 @@ article:hover   {
 }
 .up{
     right: 30px;
+    background-color: #ffffff;
+    border-radius: 50px;
 }
 
 .icono:hover{
@@ -251,75 +249,7 @@ article:hover   {
     height: 60px;
 }
 /*FIN ÍCONOS FLOTANTES*/
-/*FLIP CARD*/
 
-.cards-grid {
-    background-color: #EDE7E7;   
-    margin: 0 0.5% 0.5%;
-    display: flex;
-    justify-content: space-around;   
-    flex-wrap: wrap;
-}
-
-.flip-card{
-    width: 300px;
-    height: 300px;
-    margin: 5% 0;
-}
-
-.flip-card-inner{
-    background-color: rgb(197, 40, 40);    
-    position: relative;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 4px 20px black;
-    border-radius: 28px;
-    transition: all 550ms;
-    transform-style: preserve-3d;
-    perspective: 2000px;
-    text-align: center;
-}
-
-.flip-card:hover .flip-card-inner{
-    transform: rotateY(-180deg);
-}
-    
-.flip-card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 28px; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    backface-visibility: hidden;
-    overflow: hidden;   
-    margin-top: 20%;        
-}
-
-.flip-card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 28px;     
-    display: grid;
-    place-items: center;
-    background-color: rgb(192, 133, 138);
-    box-sizing: border-box;
-    transform:rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.card-text{
-    font-size: 2.5rem;
-    color: #EDE7E7;
-}
-
-.mapa {
-    width: 30%;
-}
-
-/*FIN FLIP CARD*/
 
 /*FLIP CARD*/
 

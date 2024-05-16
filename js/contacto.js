@@ -1,5 +1,7 @@
 let contacto = `
-<h3 id="rrhh">RECURSOS HUMANOS</h3>        
+<div class="encabezado">
+<h2 id="rrhh">RECURSOS HUMANOS</h2>     
+</div>   
             
 <div class="rrhh-container"><!--base blanca-->
 
@@ -7,7 +9,7 @@ let contacto = `
 
         <div class="nosotros">   
             <div class="nosotros-inner">
-                <h4 class="excluido">Te estamos buscando</h4>
+                <h4 class="excluido">Trabajá con nosotros</h4>
                 <!--Tiene clase "excluido hasta que unifiquemos los títulos"-->
 
                 <p>Burger Queen es una empresa con más de 20 años de trayectoria. Nuestro compromiso es ofrecer las mejores hamburguesas caseras, preparadas con ingredientes frescos y de la más alta calidad. En Burger Queen, creemos en la autenticidad y el servicio excepcional.</p>

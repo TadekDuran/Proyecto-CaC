@@ -3,7 +3,13 @@
     margin: 0%;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500
+    font-weight: 500;
+    box-sizing: border-box;
+}
+html    {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 body {
     background: #FF3131;
@@ -12,14 +18,11 @@ body {
     min-height: 100vh;
 }
 /*header*/
-a{
-    text-decoration: none;
-    color: black;
-}
 
 header {
     display: flex;
-    height: 130px;
+    height: 20vh;
+    width: 100vw;
     background: url(/img/banner.png)no-repeat;
     background-size: cover;
     justify-content: space-between;
@@ -31,11 +34,10 @@ header {
     display: flex;
     align-items: center;
     color: black;
-    
 }
 
 .logo img{
-    height: 150px;
+    height: 130px;
     left: 5%;
 }
 #cerrar-menu {
@@ -56,10 +58,12 @@ nav a{
     font-size: 2vh;
     font-weight: 800;
     padding-right: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 nav ul li a:hover{
-    color: white;
+    color: #FF3131;
 }
 
 /* Header responsive */
@@ -177,14 +181,35 @@ h3  {
 }
 
 .card-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0 50px;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 25px;
+    gap: 25px;
+}
+
+@media (min-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* Para pantallas de tablet (4 productos por fila) */
+@media (min-width: 750px) and (max-width: 1199px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Para pantallas de celulares (2 productos por fila) */
+@media (max-width: 750px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 article {
     background-color: white;
+    min-width: 100px;
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
@@ -206,15 +231,36 @@ article:hover   {
 }
 
 .promos  {
-    display: flex;
-    margin: 30px 50px;
-    gap: 50px;
+    display: grid;
+    margin: 30px 25px;
+    gap: 25px;
     justify-content: center;
+    justify-items: center;
+}
+
+@media (min-width: 1200px) {
+    .promos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Para pantallas de tablet (4 productos por fila) */
+@media (min-width: 750px) and (max-width: 1199px) {
+    .promos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para pantallas de celulares (2 productos por fila) */
+@media (max-width: 750px) {
+    .promos {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .tarjeta-promo  {
-    width: 70%;
-    max-width: 250px;
+    min-width: 150px;
+    max-width: 300px;
 }
 
 #imagen-promo   {

@@ -1,4 +1,3 @@
-let contenedorTarjetaPromos = document.querySelector('.promos');
 fetch('../json/promos.json')
 .then(response => response.json())
 .then(data =>   {
@@ -11,6 +10,7 @@ fetch('../json/promos.json')
 .catch(error => console.log('Error al cargar el JSON', error));
 
 function problarPromos(producto) {
+    let contenedorTarjetaPromos = document.querySelector('.promos');
     let tarjeta = document.createElement('article');
     tarjeta.className = 'tarjeta-promo'
 

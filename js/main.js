@@ -1,5 +1,4 @@
 let header = `
-
             <div class="logo">
                 <a href="index.html"><img src="/img/logo.png" alt="logo de la compañía"></a>    
             </div>

@@ -165,10 +165,14 @@ nav ul li a:hover{
     justify-content: center;
 }
 .gif{
-    background-size: cover;
-    display: flex;
-    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
     background-color: black;
+}
+.gif img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 /* MENU.HTML CARD */
 

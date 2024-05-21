@@ -5,42 +5,84 @@
             "nombre": "Burger Queen",
             "precio": 1000,
             "stock": true,
-            "imagen": "/img/burga ejemplo.avif"
+            "imagen": "/img/FotosMenu/1burger.avif"
         },
         {
             "id": 2,
             "nombre": "Queendom",
             "precio": 1500,
             "stock": true,
-            "imagen": "/img/burga ejemplo.avif"
+            "imagen": "/img/FotosMenu/2burger.avif"
         },
         {
             "id": 3,
             "nombre": "Queen Big",
             "precio": 1250,
             "stock": true,
-            "imagen": "/img/burga ejemplo.avif"
+            "imagen": "/img/FotosMenu/3burger.avif"
         },
         {
             "id": 4,
             "nombre": "Queen's Throne",
             "precio": 2000,
             "stock": true,
-            "imagen": "/img/burga ejemplo.avif"
+            "imagen": "/img/FotosMenu/extra.jpg"
         },
         {
             "id": 5,
             "nombre": "Queen's Crown",
             "precio": 1750,
             "stock": true,
-            "imagen": "/img/burga ejemplo.avif"
+            "imagen": "/img/FotosMenu/5burger.avif"
         },
         {
             "id": 6,
-            "nombre": "Queen Bee",
+            "nombre": "Bee Queen",
             "precio": 2000,
             "stock": true,
-            "imagen": "/img/burga ejemplo.avif"
+            "imagen": "/img/FotosMenu/6burger.jpg"
+        },
+        {
+            "id": 7,
+            "nombre": "Queen Royale",
+            "precio": 2000,
+            "stock": true,
+            "imagen": "/img/FotosMenu/7burger.avif"
+        },
+        {
+            "id": 8,
+            "nombre": "Queen Supreme",
+            "precio": 2000,
+            "stock": true,
+            "imagen": "/img/FotosMenu/8burger.jpg"
+        },
+        {
+            "id": 9,
+            "nombre": "Queen Gourmet",
+            "precio": 2000,
+            "stock": true,
+            "imagen": "/img/FotosMenu/9burger.jpg"
+        },
+        {
+            "id": 10,
+            "nombre": "Queen's Delight",
+            "precio": 2000,
+            "stock": true,
+            "imagen": "/img/FotosMenu/10burger.jpg"
+        },
+        {
+            "id": 11,
+            "nombre": "Queen's Feast",
+            "precio": 2000,
+            "stock": true,
+            "imagen": "/img/FotosMenu/11burger.jpg"
+        },
+        {
+            "id": 12,
+            "nombre": "Queen's Fries",
+            "precio": 2000,
+            "stock": true,
+            "imagen": "/img/FotosMenu/12fries.avif"
         }
     ]
 }

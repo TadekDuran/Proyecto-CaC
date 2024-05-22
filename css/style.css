@@ -286,24 +286,24 @@ article:hover   {
 /*ÍCONOS FLOTANTE*/
 .icono{
     position: fixed;
-    width: 55px;
-    height: 55px;
     line-height: 55px;
     bottom: 30px;  
     z-index: 1000;  
 }
 .wsp{
+    height: 85px;
     left: 30px;
-}
-.up{
-    right: 30px;
-    background-color: #ffffff;
-    border-radius: 50px;
 }
 
 .icono:hover{
-    width: 60px;
-    height: 60px;
+    transform: scale(1.1);
+}
+.up{
+    width: 55px;
+    height: 55px;
+    right: 30px;
+    background-color: #ffffff;
+    border-radius: 50px;
 }
 /*FIN ÍCONOS FLOTANTES*/
 

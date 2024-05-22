@@ -13,6 +13,28 @@ let header = `
                 </ul>
             </nav>
 `
+let iconosFlotantes = `
+<div id="contenedor-modal">
+
+<button id="btn-abrir-modal"><img src="img/whatsapp1.png" alt="Icono Whatsapp" class="icono wsp"></button>
+<dialog id="modal">
+    <p>Para hacer tu pedido escribinos por Whatsapp indicando lo siguiente: </p>
+    <ul>
+        <li>Nombre: </li>
+        <li>Ciudad: </li>
+        <li>Dirección: </li>
+        <li>Detalle de la compra: </li>
+        <li>Medio de pago:</li>
+    </ul>
+    <p>Nuestros vendedores van a redirigir tu pedido a la sucursal correspondiente.</p>
+    <button id="btn-cerrar-modal" class="modal">Cerrar</button>
+    <button id="ir-a-pedido" class="modal">Hacer Pedido</button>
+</dialog>
+<a href="index.html">
+    <img src="img/up-icon.png" alt="" class="icono up">
+</a>
+`
+
 let footer = `
             <h2>SIGUENOS</h2>
             <div class="redes">
@@ -27,5 +49,27 @@ let footer = `
 `
 document.querySelector("header").innerHTML=header
 
+document.querySelector("#contenedor-iconos-flotantes").innerHTML = iconosFlotantes;
+
 document.querySelector("footer").innerHTML = footer
 
+const btnAbrirModal =
+    document.querySelector("#btn-abrir-modal");
+const btnCerrarModal =
+    document.querySelector("#btn-cerrar-modal");
+const modal =
+    document.querySelector("#modal");
+const irAPedido =
+    document.querySelector("#ir-a-pedido")
+
+btnAbrirModal.addEventListener("click", () => {
+    modal.showModal();
+});
+
+btnCerrarModal.addEventListener("click", () => {
+    modal.close();
+});
+
+irAPedido.addEventListener("click", () => {
+    window.open("https://api.whatsapp.com/send/?phone=000000000", "blank_")
+});

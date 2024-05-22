@@ -133,15 +133,15 @@
 
         </section>  -->
         <div id="app">
-            <div class="cards-grid">
-                <div v-for="ciudad in datos" class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3 class="card-text">{{ciudad.ubicacion}}</h3>
+            <div class="card-grid">
+                <div v-for="ciudad in datos" class="flip-card fc-sucursales">
+                    <div class="flip-card-inner fci-sucursales">
+                        <div class="flip-card-front fcf-sucursales">
+                            <h3 class="ciudad">{{ciudad.ubicacion}}</h3>
                             <img src="img/mapa_blanco.png" alt="mapa" class="mapa">
                         </div>
                         <div class="flip-card-back">
-                            <iframe :src="ciudad.mapa" :alt="mapa" width="300" height="300"
+                            <iframe :src="ciudad.mapa" :alt="mapa" class="img-mapa" width="300" height="300"
                                 style="border:0; border-radius: 28px" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>

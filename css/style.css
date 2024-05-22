@@ -26,7 +26,8 @@ header {
     background-size: cover;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;    
+    padding: 10px;   
+   
 }
 
 .logo{
@@ -181,7 +182,7 @@ nav ul li a:hover{
 }
 /* MENU.HTML CARD */
 
-h3  {
+/*h3  {
     margin: 40px;
 }
 
@@ -190,7 +191,7 @@ h3  {
     grid-template-columns: repeat(6, 1fr);
     margin: 0 25px;
     gap: 25px;
-}
+}*/
 
 /* Menú responsive */
 /* Pantallas de escritorio (6 productos por fila) */
@@ -215,7 +216,7 @@ h3  {
 }
 /* Fin menú responsive */
 
-article {
+/*article {
     background-color: white;
     min-width: 100px;
     border-radius: 15px;
@@ -244,32 +245,32 @@ article:hover   {
     gap: 25px;
     justify-content: center;
     justify-items: center;
-}
+}*/
 
 /* Promos responsive */
 /* Pantallas de escritorio (6 productos por fila) */
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .promos {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* Pantallas de tablet (4 productos por fila) */
-@media (min-width: 750px) and (max-width: 1199px) {
+/*@media (min-width: 750px) and (max-width: 1199px) {
     .promos {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Pantallas de celulares (2 productos por fila) */
-@media (max-width: 750px) {
+/*@media (max-width: 750px) {
     .promos {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+}*/
 /* Fin promos responsive */
 
-.tarjeta-promo  {
+/*.tarjeta-promo  {
     min-width: 150px;
     max-width: 300px;
 }
@@ -278,7 +279,7 @@ article:hover   {
     max-width: 100%;
     border: 3px;
     border-color: #FC3131;
-}
+}*/
 
 
 /* FIN MENU.HTML CARD */
@@ -380,7 +381,7 @@ article:hover   {
 */
 /*FLIP CARD*/
 
-.cards-grid {
+/*.cards-grid {
     background-color: #EDE7E7;   
     margin: 0 1% 0.5%;
     display: flex;
@@ -446,8 +447,8 @@ article:hover   {
 .mapa {
     width: 30%;
     margin-top: -35px;
-}
-/*.card-grid {
+}*/
+.card-grid {
     display: flex;
     flex-wrap: wrap;
     margin: 0 1% 0.5%;
@@ -505,22 +506,12 @@ article:hover   {
 .fcf-sucursales img{
     width: 60%;
     align-self: center;
-     
-   
+}
     
-    /*background-image: url("/img/mapa_negro.png");
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    
-
-
 .fcf-sucursales p {
     font-size: 2.3rem;
     margin-top: 15%;
 }
-
-
 
 .flip-card-back{
     background-color: #EDE7E7;
@@ -577,7 +568,7 @@ article:hover   {
     width: auto;
     height: 80%; 
     margin-bottom: 5%;
-}*/
+}
 /*INICIO RRHH*/
 
 .rrhh-container{

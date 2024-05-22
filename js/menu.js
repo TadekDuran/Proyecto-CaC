@@ -1,4 +1,4 @@
-let contenedorTarjeta = document.querySelector('.card-container');
+let contenedorTarjeta = document.querySelector('.card-grid');
 fetch('../json/menu.json')
 .then(response => response.json())
 .then(data =>   {
@@ -11,22 +11,45 @@ fetch('../json/menu.json')
 .catch(error => console.log('Error al cargar el JSON', error));
 
 function problarMenu(producto) {
-    let tarjeta = document.createElement('article');
+    let flipCard = document.createElement('div');
+    flipCard.classList.add('flip-card', 'fc-menu');
+
+    let flipCardInner = document.createElement('div');
+    flipCardInner.classList.add('flip-card-inner', 'fci-menu');
+
+    let flipCardFront = document.createElement('div');
+    flipCardFront.classList.add('flip-card-front', 'fcf-menu');
 
     const img = document.createElement('img');
+    img.className = 'imagen-producto';
     img.src = producto.imagen;
-    img.alt = "Hamburguesa"
-    img.id = "imagen-producto"
-    tarjeta.appendChild(img);
+    img.alt = "Hamburguesa";
+    img.id = "imagen-producto";
+    flipCardFront.appendChild(img);
 
     const nombre = document.createElement('p');
-    nombre.innerText = producto.nombre
-    tarjeta.appendChild(nombre);
+    nombre.className = 'titulo-card';
+    nombre.innerText = producto.nombre;
+    flipCardFront.appendChild(nombre);
 
     const precio = document.createElement('p');
+    nombre.className = 'precio-card';
     precio.className = 'precio';
     precio.innerText = `$${producto.precio}`;
-    tarjeta.appendChild(precio);
+    flipCardFront.appendChild(precio);
 
-    contenedorTarjeta.appendChild(tarjeta);
+    let flipCardBack = document.createElement('div');
+    flipCardBack.classList.add('flip-card-back', 'fcb-menu');
+
+    const descripcion = document.createElement('p');
+    descripcion.className = 'descripcion-card';
+    descripcion.innerText = `${producto.descripcion}`;
+    flipCardBack.appendChild(descripcion);
+
+    
+    flipCardInner.appendChild(flipCardFront);
+    flipCardInner.appendChild(flipCardBack);
+    flipCard.appendChild(flipCardInner);
+
+    contenedorTarjeta.appendChild(flipCard);
 }

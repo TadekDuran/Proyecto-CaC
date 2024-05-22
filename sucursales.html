@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">    
-    <link rel="stylesheet" href="/css/style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/83d0bbc62a.js" crossorigin="anonymous"></script>
     <title> BurgerQueen</title>
 
 
 </head>
+
 <body>
     <header>
-        
+
     </header>
 
     <main>
         <div class="encabezado">
             <h2>SUCURSALES</h2>
-            </div>
-        <section class="cards-grid">
+        </div>
+        <!--<section class="cards-grid">
 
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -127,19 +131,40 @@
             
             </div>
 
-        </section>  
-          
+        </section>  -->
+        <div id="app">
+            <div class="cards-grid">
+                <div v-for="ciudad in datos" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3 class="card-text">{{ciudad.ubicacion}}</h3>
+                            <img src="img/mapa_blanco.png" alt="mapa" class="mapa">
+                        </div>
+                        <div class="flip-card-back">
+                            <iframe :src="ciudad.mapa" :alt="mapa" width="300" height="300"
+                                style="border:0; border-radius: 28px" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </main>
 
     <div id="contenedor-iconos-flotantes">
-        
+
 
     </div>
 
     <footer class="contenedor">
-        
+
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/sucursales.js"></script>
     <script src="/js/main.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

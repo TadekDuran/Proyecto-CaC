@@ -444,7 +444,7 @@ article:hover   {
 
 /*FIN FLIP CARDS*/
 
-/*Menú responsive FLEX
+/* Menú responsive FLEX */
 .card-grid {
       display: flex;
       flex-wrap: wrap;
@@ -470,7 +470,6 @@ article:hover   {
         flex: 1 1 100%;
       }
     }
-*/
 
 /* Menú responsive GRID*/
 /* Pantallas de escritorio (6 productos por fila) */

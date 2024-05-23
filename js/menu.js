@@ -1,16 +1,20 @@
 let contenedorTarjeta = document.querySelector('.card-grid');
+let tarjetas = [];
+
 fetch('../json/menu.json')
 .then(response => response.json())
 .then(data =>   {
     data.productos.forEach(producto => {
         if (producto.stock) {
-            problarMenu(producto);
+            tarjetas.push(problarArray(producto))
         }
     });
+    tarjetas.sort((a, b) => obtenerPrecio(a) - obtenerPrecio(b));
+    tarjetas.forEach(tarjeta => contenedorTarjeta.appendChild(tarjeta));
 })
 .catch(error => console.log('Error al cargar el JSON', error));
 
-function problarMenu(producto) {
+function problarArray(producto) {
     let flipCard = document.createElement('div');
     flipCard.classList.add('flip-card', 'fc-menu');
 
@@ -51,5 +55,11 @@ function problarMenu(producto) {
     flipCardInner.appendChild(flipCardBack);
     flipCard.appendChild(flipCardInner);
 
-    contenedorTarjeta.appendChild(flipCard);
+    return flipCard;
+}
+
+function obtenerPrecio(tarjeta) {
+    let precioElemento = tarjeta.querySelector('.precio');
+    let precio = parseFloat(precioElemento.textContent.replace('$', ''));
+    return precio;
 }

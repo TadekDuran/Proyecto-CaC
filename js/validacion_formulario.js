@@ -36,13 +36,12 @@ function validar(){
         return false;
     }
     
-    //validación deshabilitada porque crea conflicto con formspree
-    /*if (form.cv.value == "") {
+    if (form.cv.value == "") {
         alert('Carga tu cv')
         form.cv.value = ""
         form.cv.focus()
         return false
-    }*/
+    }
 
     if (form.text_area.value == "") {
         alert('Completá este campo por favor');

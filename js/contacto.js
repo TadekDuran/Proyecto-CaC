@@ -9,8 +9,7 @@ let contacto = `
 
         <div class="nosotros">   
             <div class="nosotros-inner">
-                <h4 class="excluido">Trabajá con nosotros</h4>
-                <!--Tiene clase "excluido hasta que unifiquemos los títulos"-->
+                <h4 class="rrhh-titulo">Trabajá con nosotros</h4>
 
                 <p>Burger Queen es una empresa con más de 20 años de trayectoria. Nuestro compromiso es ofrecer las mejores hamburguesas caseras, preparadas con ingredientes frescos y de la más alta calidad. En Burger Queen, creemos en la autenticidad y el servicio excepcional.</p>
                 
@@ -21,8 +20,8 @@ let contacto = `
         </div>
 
         <div class="form">
-        <form name="form" action="https://formspree.io/f/mwkgaboj" method="POST" target="_self" enctype="multipart/form-data" id="form">
-        <!--Solucionar conflicto entre formspree y Netlify=> validar.js ln 39-->
+        <form name="form"  method="POST" data-netlify=true target="_self" enctype="multipart/form-data" id="form">
+        
 
             <fieldset>
                 <legend>Datos Personales</legend>

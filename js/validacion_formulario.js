@@ -36,12 +36,13 @@ function validar(){
         return false;
     }
     
-    if (form.cv.value == "") {
+    //Validación comentada para que no entre en conflicto con Formspree
+    /*if (form.cv.value == "") {
         alert('Carga tu cv')
         form.cv.value = ""
         form.cv.focus()
         return false
-    }
+    }*/
 
     if (form.text_area.value == "") {
         alert('Completá este campo por favor');

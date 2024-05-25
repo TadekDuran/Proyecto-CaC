@@ -3,7 +3,7 @@ let contacto = `
 <h2 id="rrhh">RECURSOS HUMANOS</h2>     
 </div>   
             
-<div class="rrhh-container"><!--base blanca-->
+<div class="rrhh-container">
 
     <div class="rrhh-container-inner"> 
 
@@ -20,7 +20,7 @@ let contacto = `
         </div>
 
         <div class="form">
-        <form name="form"  method="POST" data-netlify=true target="_self" enctype="multipart/form-data" id="form">
+        <form action="https://formspree.io/f/mwkgaboj" method="POST" target="_self" enctype="multipart/form-data" id="form" name="form">
         
 
             <fieldset>

@@ -228,10 +228,10 @@ nav ul li a:hover{
     padding: 0 1% 
 }
 
-.cg-menu {
+/*.cg-menu {
     margin: 0 25px;
     gap: 25px;
-}
+}*/
 
 .flip-card {
     width: 300px;
@@ -359,7 +359,7 @@ nav ul li a:hover{
 
   .cg-menu, .promos {
     flex: 1 1 calc(25% - 50px);
-    margin: 25px;
+
   }
   @media (min-width: 1200px) {
     .cg-menu, .promos {
@@ -486,6 +486,7 @@ article:hover   {
     margin: 0 1% 2%;    
     padding: 1%;
     min-width: 250px;
+    border-radius: 28px;
 }
 
 .rrhh-container-inner {  
@@ -510,7 +511,7 @@ article:hover   {
     align-items: center;  
 }
 
-.excluido {
+.rrhh-titulo {
     /* h4 "Te estamos buscando"
     Tiene clase "excluido" hasta que unifiquemos los estilos*/
     font-size: 1.5rem;

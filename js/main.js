@@ -30,9 +30,6 @@ let iconosFlotantes = `
     <button id="btn-cerrar-modal" class="modal">Cerrar</button>
     <button id="ir-a-pedido" class="modal">Hacer Pedido</button>
 </dialog>
-<a href="index.html">
-    <img src="img/up-icon.png" alt="" class="icono up">
-</a>
 `
 
 let footer = `

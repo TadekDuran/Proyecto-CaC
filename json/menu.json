@@ -6,15 +6,15 @@
             "precio": 1000,
             "stock": true,
             "imagen": "/img/FotosMenu/1burger.avif",
-            "descripcion": "Prueba de descripcion Prueba de descripcion Prueba de descripcion Prueba de descripcion Prueba de descripcion"
+            "descripcion": "Hamburguesa medallón de carne, mix de hojas verdes, cheddar y salsa BurgerQueen"
         },
         {
             "id": 2,
             "nombre": "Queendom",
             "precio": 1500,
-            "stock": false,
+            "stock": true,
             "imagen": "/img/FotosMenu/2burger.avif",
-            "descripcion": "Prueba de descripcion Prueba de descripcion Prueba de descripcion Prueba de descripcion Prueba de descripcion"
+            "descripcion": "Hamburguesa doble medallón de pollo crispy, pepinillos, brotes y salsa golf"
         },
         {
             "id": 3,
@@ -22,15 +22,15 @@
             "precio": 1150,
             "stock": true,
             "imagen": "/img/FotosMenu/3burger.avif",
-            "descripcion": "Prueba de descripcion"
+            "descripcion": "Hamburguesa medallón de carne, mix de hojas verdes, cebolla morada, tomate, y salsas extra "
         },
         {
             "id": 4,
             "nombre": "Queen's Throne",
             "precio": 2200,
             "stock": true,
-            "imagen": "/img/FotosMenu/extra.jpg",
-            "descripcion": "Prueba de descripcion"
+            "imagen": "/img/FotosMenu/extra.avif",
+            "descripcion": "Hamburguesa doble medallón de carne, bacon, mix de hojas verdes, cebolla morada y salsa BurgerQueen"
         },
         {
             "id": 5,
@@ -38,15 +38,15 @@
             "precio": 1550,
             "stock": true,
             "imagen": "/img/FotosMenu/5burger.avif",
-            "descripcion": "Prueba de descripcion"
+            "descripcion": "Hamburguesa doble medallón de carne, cheddar, huevo, lomito ahumado"
         },
         {
             "id": 6,
             "nombre": "Bee Queen",
             "precio": 2000,
-            "stock": false,
-            "imagen": "/img/FotosMenu/6burger.jpg",
-            "descripcion": "Prueba de descripcion"
+            "stock": true,
+            "imagen": "/img/FotosMenu/4burger.avif",
+            "descripcion": "Hamburguesa medallón de carne, mix de hojas verdes, tomate, cheddar, bacon y huevo frito"
         },
         {
             "id": 7,
@@ -54,39 +54,39 @@
             "precio": 2300,
             "stock": true,
             "imagen": "/img/FotosMenu/7burger.avif",
-            "descripcion": "Prueba de descripcion"
+            "descripcion": "Hamburguesa medallón de carne, lechuga, tomate, cebolla y salsas de la casa"
         },
         {
             "id": 8,
             "nombre": "Queen Supreme",
             "precio": 1999,
             "stock": true,
-            "imagen": "/img/FotosMenu/8burger.jpg",
-            "descripcion": "Prueba de descripcion"
+            "imagen": "/img/FotosMenu/8burger.avif",
+            "descripcion": "Hamburguesa doble medallón de carne, queso cheddar, aros de cebolla caramelizada y salsas de la casa"
         },
         {
             "id": 9,
             "nombre": "Queen Gourmet",
             "precio": 1650,
             "stock": true,
-            "imagen": "/img/FotosMenu/9burger.jpg",
-            "descripcion": "Prueba de descripcion"
+            "imagen": "/img/FotosMenu/9burger.avif",
+            "descripcion": "Hamburguesa triple medallón de carne, triple cheddar, lechiga, tomate y cebollas encurtidas"
         },
         {
             "id": 10,
             "nombre": "Queen's Delight",
             "precio": 1600,
             "stock": true,
-            "imagen": "/img/FotosMenu/10burger.jpg",
-            "descripcion": "Prueba de descripcion"
+            "imagen": "/img/FotosMenu/bur10.avif",
+            "descripcion": "Clásica hamburguesa medallón de carne con lechuga, tomate y queso cheddar"
         },
         {
             "id": 11,
             "nombre": "Queen's Feast",
             "precio": 1750,
             "stock": true,
-            "imagen": "/img/FotosMenu/11burger.jpg",
-            "descripcion": "Prueba de descripcion"
+            "imagen": "/img/FotosMenu/bur11.avif",
+            "descripcion": "Hamburuguesa medallón de pollo, hojas de espinaca, salsa Queen picante"
         },
         {
             "id": 12,
@@ -94,7 +94,7 @@
             "precio": 1000,
             "stock": true,
             "imagen": "/img/FotosMenu/12fries.avif",
-            "descripcion": "Prueba de descripcion"
+            "descripcion": "Porción extra de papas para acompañar tus burguer"
         }
     ]
 }

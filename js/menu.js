@@ -45,9 +45,9 @@ function problarArray(producto) {
     let flipCardBack = document.createElement('div');
     flipCardBack.classList.add('flip-card-back', 'fcb-menu');
 
-    const descripcion = document.createElement('p');
+    const descripcion = document.createElement('div');
     descripcion.className = 'descripcion-card';
-    descripcion.innerText = `${producto.descripcion}`;
+    descripcion.innerHTML = `<p>${producto.nombre}</p><br><p>${producto.descripcion}</p>`;
     flipCardBack.appendChild(descripcion);
 
     

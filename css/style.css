@@ -315,6 +315,18 @@ nav ul li a:hover{
     
 }
 
+.fcb-menu {
+    color: #000000;
+    font-size: 1.2rem;
+    text-align: center;
+    place-content: center;
+  }
+  
+  .fcb-menu p {
+      margin: 2%;
+      font-weight: 800;
+  }
+
 .imagen-producto {
     width: auto;
     height: 80%;

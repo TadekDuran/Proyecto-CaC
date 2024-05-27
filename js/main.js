@@ -13,11 +13,12 @@ let header = `
                 </ul>
             </nav>
 `
-let iconosFlotantes = `
+let contenedorModal = `
 <div id="contenedor-modal">
 
 <button id="btn-abrir-modal"><img src="img/whatsapp1.png" alt="Icono Whatsapp" class="icono wsp"></button>
 <dialog id="modal">
+    
     <p>Para hacer tu pedido escribinos por Whatsapp indicando lo siguiente: </p>
     <ul>
         <li>Nombre: </li>
@@ -27,6 +28,7 @@ let iconosFlotantes = `
         <li>Medio de pago:</li>
     </ul>
     <p>Nuestros vendedores van a redirigir tu pedido a la sucursal correspondiente.</p>
+    <p id=horario>Podés pedir de Lunes a Domingo, de 12 a 15hs y de 20 a 00hs, o podés acercarte a cualquiera de nuestras sucursales de 12 a 00hs.</p>
     <button id="btn-cerrar-modal" class="modal">Cerrar</button>
     <button id="ir-a-pedido" class="modal">Hacer Pedido</button>
 </dialog>
@@ -46,7 +48,7 @@ let footer = `
 `
 document.querySelector("header").innerHTML=header
 
-document.querySelector("#contenedor-iconos-flotantes").innerHTML = iconosFlotantes;
+document.querySelector("#contenedor-wsp").innerHTML = contenedorModal;
 
 document.querySelector("footer").innerHTML = footer
 

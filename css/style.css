@@ -213,10 +213,16 @@ nav ul li a:hover{
     background-color: #ffffff;
     border-radius: 50px;
 }
-
-
 /*FIN ÍCONOS FLOTANTES*/
 
+/*Modal*/
+#modal p {
+    padding: 1%;
+}
+
+#horario{
+    font-size: x-small;
+}
 
 .card-grid {
     display: flex;
@@ -227,11 +233,6 @@ nav ul li a:hover{
     border-radius: 28px;
     padding: 0 1% 
 }
-
-/*.cg-menu {
-    margin: 0 25px;
-    gap: 25px;
-}*/
 
 .flip-card {
     width: 300px;

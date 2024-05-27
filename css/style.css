@@ -287,8 +287,9 @@ nav ul li a:hover{
  
 }
 .fcf-sucursales img{
-    width: 60%;
+    width: 45%;
     align-self: center;
+    margin-top: 8%;
 }
 
 .ciudad {

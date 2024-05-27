@@ -35,8 +35,8 @@
         {
             "id": 5,
             "nombre": "Queen's Crown",
-            "precio": false,
-            "stock": true,
+            "precio": 1500,
+            "stock": false,
             "imagen": "/img/FotosMenu/5burger.avif",
             "descripcion": "Hamburguesa doble medallón de carne, cheddar, huevo, lomito ahumado"
         },

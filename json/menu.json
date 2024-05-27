@@ -12,7 +12,7 @@
             "id": 2,
             "nombre": "Queendom",
             "precio": 1500,
-            "stock": true,
+            "stock": false,
             "imagen": "/img/FotosMenu/2burger.avif",
             "descripcion": "Hamburguesa doble medallón de pollo crispy, pepinillos, brotes y salsa golf"
         },
@@ -35,7 +35,7 @@
         {
             "id": 5,
             "nombre": "Queen's Crown",
-            "precio": 1550,
+            "precio": false,
             "stock": true,
             "imagen": "/img/FotosMenu/5burger.avif",
             "descripcion": "Hamburguesa doble medallón de carne, cheddar, huevo, lomito ahumado"
@@ -76,7 +76,7 @@
             "id": 10,
             "nombre": "Queen's Delight",
             "precio": 1600,
-            "stock": true,
+            "stock": false,
             "imagen": "/img/FotosMenu/bur10.avif",
             "descripcion": "Clásica hamburguesa medallón de carne con lechuga, tomate y queso cheddar"
         },

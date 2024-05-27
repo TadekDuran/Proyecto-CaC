@@ -186,9 +186,26 @@ nav ul li a:hover{
 }
 
 
-/* MENU.HTML CARD */
+/* MENU */
 
-/* FIN MENU.HTML CARD */
+.filter-container {
+    background-color: #EDE7E7;
+    padding: 0.3em 0.3em 0 0.3em;
+    border-radius: 20px 20px 0 0;
+    font-size: 1.5em;
+    margin-left: 5%;
+    display: inline-flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.filter-active {
+    font-weight: 900;
+    cursor: text;
+}
+
+/* FIN MENU */
 
 /*ÍCONOS FLOTANTE*/
 .icono{

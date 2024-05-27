@@ -9,7 +9,7 @@ fetch('../json/menu.json')
             tarjetas.push(problarArray(producto))
         }
     });
-    tarjetas.sort((a, b) => obtenerPrecio(a) - obtenerPrecio(b));
+    precioMenor(tarjetas);
     tarjetas.forEach(tarjeta => contenedorTarjeta.appendChild(tarjeta));
 })
 .catch(error => console.log('Error al cargar el JSON', error));
@@ -37,7 +37,7 @@ function problarArray(producto) {
     flipCardFront.appendChild(nombre);
 
     const precio = document.createElement('p');
-    nombre.className = 'precio-card';
+    precio.className = 'precio-card';
     precio.className = 'precio';
     precio.innerText = `$${producto.precio}`;
     flipCardFront.appendChild(precio);
@@ -58,8 +58,42 @@ function problarArray(producto) {
     return flipCard;
 }
 
+function precioMayor(tarjetas) {
+    tarjetas.sort((a, b) => obtenerPrecio(b) - obtenerPrecio(a));
+    destacarFiltro('precio-mayor');
+    actualizarTarjetas();
+}
+function precioMenor(tarjetas) {
+    tarjetas.sort((a, b) => obtenerPrecio(a) - obtenerPrecio(b));
+    destacarFiltro('precio-menor');
+    actualizarTarjetas();
+}
+
 function obtenerPrecio(tarjeta) {
     let precioElemento = tarjeta.querySelector('.precio');
     let precio = parseFloat(precioElemento.textContent.replace('$', ''));
     return precio;
 }
+
+function actualizarTarjetas() {
+    contenedorTarjeta.innerHTML = '';
+    tarjetas.forEach(tarjeta => contenedorTarjeta.appendChild(tarjeta));
+}
+
+function destacarFiltro(filtro) {
+    const filtroMayor = document.querySelector('.precio-mayor');
+    const filtroMenor = document.querySelector('.precio-menor');
+
+    if (filtro === 'precio-mayor') {
+        filtroMayor.classList.add('filter-active');
+        filtroMenor.classList.remove('filter-active');
+    } else if (filtro === 'precio-menor') {
+        filtroMayor.classList.remove('filter-active');
+        filtroMenor.classList.add('filter-active');
+    }
+}
+
+document.querySelector('.precio-mayor')
+        .addEventListener('click', () => precioMayor(tarjetas));
+document.querySelector('.precio-menor')
+        .addEventListener('click', () => precioMenor(tarjetas));

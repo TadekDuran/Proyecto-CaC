@@ -29,8 +29,11 @@ let contenedorModal = `
     </ul>
     <p>Nuestros vendedores van a redirigir tu pedido a la sucursal correspondiente.</p>
     <p id=horario>Podés pedir de Lunes a Domingo, de 12 a 15hs y de 20 a 00hs, o podés acercarte a cualquiera de nuestras sucursales de 12 a 00hs.</p>
-    <button id="btn-cerrar-modal" class="modal">Cerrar</button>
-    <button id="ir-a-pedido" class="modal">Hacer Pedido</button>
+    <div id="botones-modal">
+        <button id="btn-cerrar-modal" class="modal">Cerrar</button>
+        <button id="ir-a-pedido" class="modal">Hacer Pedido</button>
+    </div>
+    
 </dialog>
 `
 

@@ -138,7 +138,8 @@ nav ul li a:hover{
     font-weight: 400;
     font-style: normal;
 }
-.content-banner h3{
+/*Comentado porque no supimos resolver el conflicto con el h1*/
+/*.content-banner h3{
     color:gray;
     font-size: 1.5rem;
     font-weight: 500;
@@ -147,7 +148,7 @@ nav ul li a:hover{
     justify-content: left;
     font-weight: 400;
     font-style: normal;
-}
+}*/
 .encabezado h2{
     margin-top: 40px;
     margin-bottom: 50px;
@@ -192,12 +193,14 @@ nav ul li a:hover{
     background-color: #EDE7E7;
     padding: 0.3em 0.3em 0 0.3em;
     border-radius: 20px 20px 0 0;
-    font-size: 1.5em;
-    margin-left: 5%;
+    font-size: 1.1em;
+    margin-left: 10%;
     display: inline-flex;
+    justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
     cursor: pointer;
+    width: 80%;
 }
 
 .filter-active {
@@ -410,126 +413,25 @@ dialog { /**/
 
 /* Menú responsive FLEX */
 
-  .cg-menu, .promos {
+  .cg-menu, .promos, .filter-container {
     flex: 1 1 calc(25% - 50px);
 
   }
   @media (min-width: 1200px) {
-    .cg-menu, .promos {
+    .cg-menu, .promos, .filter-container {
       flex: 1 1 calc(25% - 50px);
     }
   }
   @media (min-width: 750px) and (max-width: 1199px) {
-    .cg-menu, .promos {
+    .cg-menu, .promos, .filter-container {
       flex: 1 1 calc(50% - 50px);
     }
   }
   @media (max-width: 750px) {
-    .cg-menu {
+    .cg-menu, .promos, .filter-container {
       flex: 1 1 100%;
     }
   }
-
-/*
-h3  {
-    margin: 40px;
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 0 25px;
-    gap: 25px;
-}/*
-
-/* Menú responsive */
-/* Pantallas de escritorio (6 productos por fila) */
-/*@media (min-width: 1200px) {
-    .card-grid .promos{
-        grid-template-columns: repeat(6, 1fr);
-    }
-}
-
-/* Pantallas de tablet (4 productos por fila) */
-/*@media (min-width: 750px) and (max-width: 1199px) {
-    .card-grid .promos{
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/* Pantallas de celulares (2 productos por fila) */
-/*@media (max-width: 750px) {
-    .card-grid .promos{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-/* Fin menú responsive */
-
-/*article {
-    background-color: white;
-    min-width: 100px;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-#imagen-producto {
-    max-width: 100%;
-    border: 3px;
-    border-color: #FC3131;
-}
-
-.precio {
-    font-weight: 800;
-}
-
-article:hover   {
-    transform: scale(1.1);
-}*/
-
-/*.promos  {
-    display: grid;
-    margin: 30px 25px;
-    gap: 25px;
-    justify-content: center;
-    justify-items: center;
-}*/
-
-/* Promos responsive */
-/* Pantallas de escritorio (6 productos por fila) */
-/*@media (min-width: 1200px) {
-    .promos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Pantallas de tablet (4 productos por fila) */
-/*@media (min-width: 750px) and (max-width: 1199px) {
-    .promos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Pantallas de celulares (2 productos por fila) */
-/*@media (max-width: 750px) {
-    .promos {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}*/
-/* Fin promos responsive */
-
-/*.tarjeta-promo  {
-    min-width: 150px;
-    max-width: 300px;
-}
-
-#imagen-promo   {
-    max-width: 100%;
-    border: 3px;
-    border-color: #FC3131;
-}*/
-
 
 
 /*INICIO RRHH*/

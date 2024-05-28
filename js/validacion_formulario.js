@@ -31,6 +31,11 @@ function validar(){
         }
     }
 
+    if (checkboxes[3].checked && (checkboxes[2].checked || checkboxes[1].checked || checkboxes[0].checked)) {
+        alert('Seleccioná una combinación válida');
+        return false;
+    }
+
     if (!checked) {
         alert('Selecciona al menos una opción de movilidad.');
         return false;

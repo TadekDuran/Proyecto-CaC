@@ -1,0 +1,4 @@
+Interferencias que no supimos solucionar
+
+-Comentamos un h3 en el index.html porque se superponía con el h1
+-En ciertos tamaños de pantalla el <Trabajá con Nosotros> del menú desplegable queda justificado a la izquierda

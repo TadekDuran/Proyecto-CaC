@@ -1,0 +1,20 @@
+Requisitos del proyecto: 
+
+-Transformaciones/transiciones: íconos flotantes, ventana modal, tarjetas Los más vendidos y Promos, y tarjetas flip de Menú y Sucursales.
+
+-Página responsiva: todas son responsivas pero menu.html usa las @query con tres puntos de corte
+
+-Grid y Flexbox: todas las páginas usan Grid y Flexbox
+
+-Consumo de API: las API son propias y se consumen en menu.html y sucursales.html
+
+-Vue: se usa en sucursales.html
+
+
+ADICIONALES PARA TENER EN CUENTA:
+
+-La validación de la carga del CV en el form está comentada en validacion_formulario.js porque Formspree no admite la carga de archivos, pero el campo funciona.
+
+-En menu.json hay dos productos marcados como <"stock": false> para mostrar que efectivamente dejan de mostrarse en el menú cuando están fuera de stock.
+
+-Desde el celular al ir a la opción "Hacer pedido" puede dar error porque el número ingresado no es real.

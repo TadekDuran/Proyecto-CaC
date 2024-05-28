@@ -23,7 +23,7 @@ const { createApp } = Vue
           });
       }
     },   
-  created() {  // created() se ejecuta cada vez que se crea el objeto VUE acá se dice cuál de todos los métodos se va a ejecutar el comienzo
+  created() {  
     this.fetchData(this.url)
   }
   }).mount('#app')

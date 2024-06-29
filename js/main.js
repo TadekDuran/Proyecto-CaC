@@ -46,7 +46,7 @@ let footer = `
             </div>
             <div class="copy">
                 <small>©2000-2024 <b>Burger Queen</b>-Todos los derechos reservados</small></br> 
-                <a class="acceso-administrativo" href="acceso_administrativo.html">Acceso Administrativo</a>
+                <a class="acceso-administrativo" href="login.html">Acceso Administrativo</a>
             </div>
 
 `

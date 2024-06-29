@@ -45,7 +45,8 @@ let footer = `
                 <a href="https://www.twitter.com/BurgerQueen"><i class="fa-brands fa-square-x-twitter"></i></a>
             </div>
             <div class="copy">
-                <small>©2000-2024 <b>Burger Queen</b>-Todos los derechos reservados</small>
+                <small>©2000-2024 <b>Burger Queen</b>-Todos los derechos reservados</small></br> 
+                <a class="acceso-administrativo" href="acceso_administrativo.html">Acceso Administrativo</a>
             </div>
 
 `

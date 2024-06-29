@@ -567,9 +567,21 @@ i{
 
 .copy{
     background: grey;
+    justify-content: center;
     text-align: center;
     color: black;
+    display: block;
 }
+.acceso-administrativo {
+    text-decoration: none;
+    color: #EDE7E7;
+    font-size: small;
+    
+}
+.acceso-administrativo:hover{
+    color: #FC3131;
+}
+
 /*fin footer*/
 
 

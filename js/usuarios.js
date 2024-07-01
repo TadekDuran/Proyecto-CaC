@@ -1,21 +1,20 @@
 const { createApp } = Vue
-  createApp({
+createApp({
     data() {
-      return {
-        usuarios:[],
-        
-        url:'https://burgerqueencac.pythonanywhere.com/usuarios',   
-        error:false,
-        cargando:true,
-        /*atributos para el guardar los valores del formulario */
-        id:0,
-        nombre:"", 
-        apellido:"",
-        dni:"",
-        sucursal:"",
-        puesto: "",
-        clave: ""
-    }  
+        return {
+            usuarios:[],
+            url:'https://burgerqueencac.pythonanywhere.com/usuarios',   
+            error:false,
+            cargando:true,
+            /*atributos para el guardar los valores del formulario */
+            id:0,
+            nombre:"", 
+            apellido:"",
+            dni:"",
+            sucursal:"",
+            puesto: "",
+            clave: ""
+        }  
     },
     methods: {
         fetchData(url) {
@@ -38,7 +37,7 @@ const { createApp } = Vue
             fetch(url, options)
                 .then(res => res.text()) // or res.json()
                 .then(res => {
-			 alert('Registro Eliminado')
+			        alert('Registro Eliminado');
                     location.reload(); // recarga el json luego de eliminado el registro
                 })
         },
@@ -91,10 +90,38 @@ const { createApp } = Vue
                     console.error(err);
                     alert("Error al Modificar")
                 })      
+        },
+        login() {
+            const loginUrl = 'https://burgerqueencac.pythonanywhere.com/login';
+            const credentials = {
+                dni: this.dni,
+                clave: this.clave
+            };
+            var options = {
+                body: JSON.stringify(credentials),
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                redirect: 'follow'
+            };
+            fetch(loginUrl, options)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Login failed');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    alert("Login successful");
+                    localStorage.setItem('token', data.token);
+                    window.location.href = "./productos.html";
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert("Error al iniciar sesión");
+                });
         }
-        
     },
     created() {
         this.fetchData(this.url)
     },
-  }).mount('#app')
+}).mount('#app')

@@ -12,6 +12,7 @@ const { createApp } = Vue
         sucursal:"",
         puesto:"",
         clave:"",
+        rol:"",
         url:'https://burgerqueencac.pythonanywhere.com/usuarios/'+id,
        }  
     },
@@ -28,6 +29,7 @@ const { createApp } = Vue
                     this.sucursal=data.sucursal;
                     this.puesto=data.puesto;
                     this.clave=data.clave;
+                    this.rol=data.rol;
                                     
                 })
                 .catch(err => {
@@ -42,7 +44,8 @@ const { createApp } = Vue
                 dni: this.dni,
                 sucursal: this.sucursal,
                 puesto:this.puesto,
-                clave:this.clave
+                clave:this.clave,
+                rol:this.rol
             }
             var options = {
                 body: JSON.stringify(usuario),

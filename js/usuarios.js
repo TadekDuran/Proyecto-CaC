@@ -13,7 +13,8 @@ createApp({
             dni:"",
             sucursal:"",
             puesto: "",
-            clave: ""
+            clave: "",
+            rol:""
         }  
     },
     methods: {
@@ -91,34 +92,29 @@ createApp({
                     alert("Error al Modificar")
                 })      
         },
-        login() {
-            const loginUrl = 'https://burgerqueencac.pythonanywhere.com/login';
-            const credentials = {
-                dni: this.dni,
-                clave: this.clave
-            };
-            var options = {
-                body: JSON.stringify(credentials),
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                redirect: 'follow'
-            };
-            fetch(loginUrl, options)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Login failed');
+        login(event) {
+            event.preventDefault();
+            dni=this.dni
+            
+            var i=0
+            while ( i < this.usuarios.length && this.usuarios[i].dni != this.dni  ){
+                i++
+            }
+            if (i<(this.usuarios.length)){
+                if (this.usuarios[i].clave==this.clave){
+                    if (this.usuarios[i].rol=="1"){
+                        sessionStorage.setItem("rol", this.usuarios[i].rol)
+                        window.location.href = "./usuarios.html";
+                    }else{
+                        alert('Acceso denegado')
                     }
-                    return response.json();
-                })
-                .then(data => {
-                    alert("Login successful");
-                    localStorage.setItem('token', data.token);
-                    window.location.href = "./productos.html";
-                })
-                .catch(err => {
-                    console.error(err);
-                    alert("Error al iniciar sesión");
-                });
+                                        
+                }else{
+                    alert('Clave erronea')
+                }
+            }else{
+                alert('Usuario erroneo')
+            }
         }
     },
     created() {

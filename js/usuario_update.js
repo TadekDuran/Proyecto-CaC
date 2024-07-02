@@ -53,15 +53,24 @@ const { createApp } = Vue
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'
             }
+               
             fetch(this.url, options)
-                .then(function () {
-                    alert("Registro modificado")
-                    window.location.href = "./usuarios.html"; // navega a productos.html          
+                .then(response => {
+                    if (response.status === 201) {
+                        return response.json();
+                    } else if (response.status === 409) {
+                        throw new Error("DNI ya existe en la base de datos");
+                    } else {
+                        throw new Error("Error al modificar usuario");
+                    }
+                })
+                .then(data => {
+                    alert("Registro grabado");
+                    window.location.href = "./usuarios.html";
                 })
                 .catch(err => {
-                    console.error(err);
-                    alert("Error al Modificar")
-                })      
+                    alert(err.message);
+                });  
         }
     },
     created() {

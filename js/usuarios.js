@@ -49,7 +49,8 @@ createApp({
                 dni: this.dni,
                 sucursal:this.sucursal,
                 puesto: this.puesto,
-                clave: this.clave
+                clave: this.clave,
+                rol: this.rol
             }
             var options = {
                 body:JSON.stringify(usuario),
@@ -57,41 +58,26 @@ createApp({
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'
             }
+              
             fetch(this.url, options)
-                .then(function () {
-                    alert("Registro grabado")
-                    window.location.href = "./usuarios.html";  // recarga la pagina
+                .then(response => {
+                    if (response.status === 201) {
+                        return response.json();
+                    } else if (response.status === 409) {
+                        throw new Error("DNI ya existe en la base de datos");
+                    } else {
+                        throw new Error("Error al crear usuario");
+                    }
+                })
+                .then(data => {
+                    alert("Registro grabado");
+                    window.location.href = "./usuarios.html";
                 })
                 .catch(err => {
-                    console.error(err);
-                    alert("Error al Grabar")  // puedo mostrar el error tambien
-                })      
+                    alert(err.message);
+                });   
         },
-        modificar() {
-            let usuario = {
-                nombre:this.nombre,
-                apellido: this.apellido,
-                dni: this.dni,
-                sucursal: this.sucursal,
-                puesto: this.puesto,
-                clave: this.clave
-            }
-            var options = {
-                body: JSON.stringify(usuario),
-                method: 'PUT',
-                headers: { 'Content-Type': 'application/json' },
-                redirect: 'follow'
-            }
-            fetch(this.url, options)
-                .then(function () {
-                    alert("Registro modificado")
-                    window.location.href = "./usuarios.html";         
-                })
-                .catch(err => {
-                    console.error(err);
-                    alert("Error al Modificar")
-                })      
-        },
+       
         login(event) {
             event.preventDefault();
             dni=this.dni

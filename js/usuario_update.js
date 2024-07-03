@@ -12,8 +12,8 @@ const { createApp } = Vue
         sucursal:"",
         puesto:"",
         clave:"",
-        rol:"",
         url:'https://burgerqueencac.pythonanywhere.com/usuarios/'+id,
+        rol: ""
        }  
     },
     methods: {
@@ -53,7 +53,7 @@ const { createApp } = Vue
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'
             }
-               
+              
             fetch(this.url, options)
                 .then(response => {
                     if (response.status === 201) {
@@ -70,7 +70,8 @@ const { createApp } = Vue
                 })
                 .catch(err => {
                     alert(err.message);
-                });  
+                });
+                
         }
     },
     created() {

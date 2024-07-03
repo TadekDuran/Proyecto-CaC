@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+header{
+    background-image: url(/img/banner.png);
+    
+}
+
+
+
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: small;
+    color: rgb(90, 81, 81);
+}
+
+.boton-nuevo {
+    margin-top: 5px;
+}
+
+.tabla-contenedor{
+    background-color: rgb(231, 94, 94);
+    padding: 15px 15px 0px 15px;
+}
+
+
+footer{
+    margin-top: 20px;
+    padding: 1em;
+    text-align: center;
+    
+    background-color: black;
+    color: white;
+}
+
+.copy{
+    background: grey;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    display: block;
+}
+.acceso-administrativo {
+    text-decoration: none;
+    color: #EDE7E7;
+    font-size: small;
+    
+}
+.acceso-administrativo:hover{
+    color: #FC3131;
+}
+
+
+/*FORM*/
+
+.contenedor-login {
+    background-color: rgb(255, 255, 255);
+    
+    min-width: 250px;
+    
+   
+}
+
+.form-login {
+    
+    display: flex;
+    
+    overflow: hidden;
+    justify-content: center;
+}
+
+.login {
+    width: 350px;
+    height: auto;    
+    border: 3px solid rgb(197, 40, 40);
+    padding: 2% 2%;
+    background-color: rgb(255, 255, 255); 
+    display: flex;
+    flex-direction: column;
+    
+}
+.titulo-login {
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: Nunito;
+    display: flex;
+    justify-content: center;
+}
+
+.form-login label{
+    color: #2b2525;
+    margin-left: 5px;
+    font-weight: 600;
+}
+.form-login input{
+    border: 3px solid #c24949;
+    background-color: #FF3131;
+    font-size: large;
+    padding: 5px;
+    color: white;
+}
+
+.btn-login{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+    
+}
+
+.change-pass{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    text-decoration: none;
+    color: #030000;
+}
+
+form > button, .boton-crud> button  {
+    width: 200px;
+    background-color: #FF3131;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 10px 20px;
+    margin-top: 20px; 
+}
+
+
+form select, form input:not(.excluido, #cv){
+    width: 100%;
+    box-sizing: border-box; 
+    background-color: #FC3131;
+    border-radius: 15px;
+}   
+
+select {
+    color:white;
+}
+select > option {
+    background-color: white;
+    color:#FF3131;
+}
+
+.boton-crud{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.acciones{
+    display: flex;
+    justify-content: space-evenly;
+}
+

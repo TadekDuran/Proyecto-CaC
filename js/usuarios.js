@@ -49,7 +49,7 @@ createApp({
                 dni: this.dni,
                 sucursal:this.sucursal,
                 puesto: this.puesto,
-                clave: this.clave,
+                clave: this.dni,
                 rol: this.rol
             }
             var options = {

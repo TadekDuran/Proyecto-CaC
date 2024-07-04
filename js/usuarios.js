@@ -14,7 +14,9 @@ createApp({
             sucursal:"",
             puesto: "",
             clave: "",
-            rol:""
+            rol:"",
+            sortKey: "",
+            sortAsc: true
         }  
     },
     methods: {
@@ -58,7 +60,6 @@ createApp({
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'
             }
-              
             fetch(this.url, options)
                 .then(response => {
                     if (response.status === 201) {
@@ -77,7 +78,6 @@ createApp({
                     alert(err.message);
                 });   
         },
-       
         login(event) {
             event.preventDefault();
             dni=this.dni
@@ -101,6 +101,24 @@ createApp({
             }else{
                 alert('Usuario erroneo')
             }
+        },
+        sort(key) {
+            if (this.sortKey === key) {
+                this.sortAsc = !this.sortAsc;
+            } else {
+                this.sortKey = key;
+                this.sortAsc = true;
+            }
+        }
+    },
+    computed: {
+        sortedUsuarios() {
+            return this.usuarios.slice().sort((a, b) => {
+                let modifier = this.sortAsc ? 1 : -1;
+                if (a[this.sortKey] < b[this.sortKey]) return -1 * modifier;
+                if (a[this.sortKey] > b[this.sortKey]) return 1 * modifier;
+                return 0;
+            });
         }
     },
     created() {

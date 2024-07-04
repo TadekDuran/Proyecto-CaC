@@ -15,6 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styleCrud.css">
+    <script src="https://kit.fontawesome.com/83d0bbc62a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -40,17 +41,29 @@
                             <table class="table table-bordered table-striped table-light">
                                 <thead>
                                     <tr class="encabezado-tabla">
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Apellido</th>
-                                        <th scope="col">DNI</th>
-                                        <th scope="col">Sucursal</th>
-                                        <th scope="col">Puesto</th>
+                                        <th scope="col" class="sortable-column">Id
+                                            <i class="fa fa-sort" @click="sort('id')"></i>
+                                        </th>
+                                        <th scope="col" class="sortable-column">Nombre
+                                            <i class="fa fa-sort" @click="sort('nombre')"></i>
+                                        </th>
+                                        <th scope="col" class="sortable-column">Apellido
+                                            <i class="fa fa-sort" @click="sort('apellido')"></i>
+                                        </th>
+                                        <th scope="col" class="sortable-column">DNI
+                                            <i class="fa fa-sort" @click="sort('dni')"></i>
+                                        </th>
+                                        <th scope="col" class="sortable-column">Sucursal
+                                            <i class="fa fa-sort" @click="sort('sucursal')"></i>
+                                        </th>
+                                        <th scope="col" class="sortable-column">Puesto
+                                            <i class="fa fa-sort" @click="sort('puesto')"></i>
+                                        </th>
                                         <th scope="col">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="" v-for="usuario in usuarios">
+                                    <tr class="" v-for="usuario in sortedUsuarios">
                                         <td scope="row">{{usuario.id}}</td>
                                         <td>{{usuario.nombre}}</td>
                                         <td>{{usuario.apellido}}</td>
@@ -60,10 +73,10 @@
                                         <td>
                                             <div class="acciones">
                                                 <a class="btn btn-warning"
-                                                :href="'usuario_update.html?id='+usuario.id">Editar</a>
+                                                    :href="'usuario_update.html?id='+usuario.id">Editar</a>
                                                 <button type="button" class="btn btn-danger"
-                                                v-on:click="eliminar(usuario.id)">Eliminar</button>
-                                        
+                                                    v-on:click="eliminar(usuario.id)">Eliminar</button>
+
 
                                             </div>
                                         </td>
@@ -77,9 +90,9 @@
         </div>
     </main>
     <footer id="footer">
-        
+
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>

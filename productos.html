@@ -1,28 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Title</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styleCrud.css">
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styleCrud.css" />
+    <script src="https://kit.fontawesome.com/83d0bbc62a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header id="header">
-
-    </header>
+    <header id="header"></header>
     <main>
         <div id="app" class="container">
             <h1>Productos</h1>
-            <br>
+            <br />
             <a class="btn btn-secondary" href="producto_nuevo.html">Nuevo</a>
-            <br><br>
+            <br /><br />
             <div v-if="error">
-                <p>Lo sentimos , se produjo un error, intente más tarde>
+                <p>Lo sentimos , se produjo un error, intente más tarde></p>
             </div>
+
             <div v-else>
                 <section v-if="cargando">
                     <div class="spinner-border"></div>
@@ -31,37 +31,47 @@
                 <div class="tabla-contenedor">
                     <section v-else class="tabla">
                         <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-light">
+                            <table class="table table-bordered">
                                 <thead>
-                                    <tr class="encabezado-tabla">
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Precio</th>
-                                        <th scope="col">Stock</th>
+                                    <tr>
+                                        <th scope="col" class="sortable-column">
+                                            Id
+                                            <i class="fa fa-sort" @click="sort('id')"></i>
+                                        </th>
+                                        <th scope="col" class="sortable-column">
+                                            Nombre
+                                            <i class="fa fa-sort" @click="sort('nombre')"></i>
+                                        </th>
+                                        <th scope="col" class="sortable-column">
+                                            Precio
+                                            <i class="fa fa-sort" @click="sort('precio')"></i>
+                                        </th>
+                                        <th scope="col" class="sortable-column">
+                                            Stock
+                                            <i class="fa fa-sort" @click="sort('stock')"></i>
+                                        </th>
                                         <th scope="col">Imagen</th>
                                         <th scope="col">Descripcion</th>
                                         <th scope="col">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="" v-for="producto in productos">
+                                    <tr v-for="producto in sortedProductos" :key="producto.id">
                                         <td scope="row">{{producto.id}}</td>
                                         <td>{{producto.nombre}}</td>
                                         <td>{{producto.precio}}</td>
                                         <td>{{producto.stock}}</td>
                                         <td>
-                                            <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                            <img width="60" :src="producto.imagen" :alt="producto.nombre" />
                                         </td>
                                         <td>{{producto.descripcion}}</td>
                                         <td>
-                                            <div class="acciones">
-                                                <a class="btn btn-warning"
-                                                :href="'producto_update.html?id='+producto.id">Editar</a>
-                                                <button type="button" class="btn btn-danger"
-                                                v-on:click="eliminar(producto.id)">Eliminar</button>
-                                        
-
-                                            </div>
+                                            <a class="btn btn-primary"
+                                                :href="'producto_update.html?id='+ producto.id">Editar</a>
+                                            <button type="button" class="btn btn-danger"
+                                                v-on:click="eliminar(producto.id)">
+                                                Eliminar
+                                            </button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -72,9 +82,7 @@
             </div>
         </div>
     </main>
-    <footer id="footer">
-
-    </footer>
+    <footer id="footer"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -83,7 +91,8 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
     <script src="./js/main_crud.js"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--Link de VUE-->
     <script src="./js/productos.js"></script>
 </body>
 

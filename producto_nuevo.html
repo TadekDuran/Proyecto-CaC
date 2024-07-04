@@ -22,9 +22,7 @@
         <form class="login" action="POST">
           <h1 class="titulo-login">Cargar Producto</h1>
 
-
-          <label for="id">Id</label>
-          <input type="number" name="id" id="id" disabled v-model="id">
+          <input type="number" name="id" id="id" hidden v-model="id">
 
           <label for="nombre">Nombre</label>
           <input type="text" name="nombre" id="nombre" v-model="nombre">

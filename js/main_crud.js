@@ -20,7 +20,7 @@ document.getElementById("header").innerHTML = `
                 <div class="dropdown-menu" aria-labelledby="dropdownId" >
                     <a class="dropdown-item" href="productos.html">Productos</a>
                     <a class="dropdown-item" href="usuarios.html">Empleados</a>
-                    <a class="dropdown-item" href="postulantes.html">Postulantes</a>
+                
                 </div>
                 </li>
         
